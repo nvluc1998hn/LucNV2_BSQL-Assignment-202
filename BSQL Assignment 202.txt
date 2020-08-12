@@ -22,7 +22,7 @@ insert into TRAINEE values ('NVL7','2020-05-10',1,10,10,10,'gaga','dslkadlsakdls
 insert into TRAINEE values ('NVL8','2020-09-10',1,10,10,10,'gaga','dslkadlsakdlsa');
 
 ALTER table TRAINEE
-ADD Fsoft_Account varchar(50) not null primary key;
+ADD Fsoft_Account varchar(50) not null unique;
  
 
 select count(TraineeID) as ID,MONTH(Brith_Date) as "Month"
